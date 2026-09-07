@@ -38,7 +38,7 @@ function Save-UscPackage {
             New-Item -ItemType Directory -Path $packageOutputDir -Force | Out-Null
         }
 
-        Get-UscPackageVersionFile -PackageId $PackageId -Version $Version -Download -OutputDir $packageOutputDir # -Force
+        Get-UscPackageVersionFile -PackageId $PackageId -Version $Version -Download -OutputDir $packageOutputDir -Force
 
         Write-Host "  Downloaded '$PackageId' v$Version to $packageOutputDir"
     }
