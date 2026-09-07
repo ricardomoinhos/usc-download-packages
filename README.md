@@ -2,6 +2,8 @@
 
 Demonstration scripts showing how to pre-download Update Service (USC) packages and their dependencies, by installer or by package/bundle, so they can be installed later without hitting the network.
 
+**Additional context:** For background on the challenge and the motivation behind these scripts, see the [related blog post](https://example.com/my-blog-post](https://ricardomoinhos.com/pre-downloading-packages-before-upgrading-pos-terminals-with-update-service/)).
+
 ## Scripts
 
 - [`Download-UscPackagesFromInstaller.ps1`](Download-UscPackagesFromInstaller.ps1) resolves every package in an installer and downloads the selected package versions. Use `-IncludeDependencies` to download the dependencies reported for those packages as well.
